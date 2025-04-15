@@ -1,0 +1,223 @@
+/* Background Animation - Soft Wedding Gradient */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e1, #fffafa, #ffe6e6);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    color: #4d0000;
+  }
+  
+  /* Gradient Animation Keyframes */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Main Card Container - Blush white with soft glow */
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #fffdfd, #fff0f0, #ffe6e6);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(255, 192, 203, 0.5);
+    color: #4d0000;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #b30000;
+  }
+  
+  header h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #cc3366;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #990033;
+  }
+  
+  /* Section Styling */
+  .section {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(255, 204, 204, 0.4);
+    backdrop-filter: blur(6px);
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .section h3 {
+    color: #b3003b;
+    margin-bottom: 10px;
+  }
+  
+  /* Animated Card Entry */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* RSVP Form */
+  form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffccd5;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #ff4d6d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #e60039;
+  }
+  
+  .confirmation {
+    color: #cc0066;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Button */
+  #toggle-rsvp {
+    background-color: #fd8a9e;
+    /* color: #4d0000; */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 20px auto;
+  }
+
+ 
+  
+  #toggle-rsvp:hover {
+    background-color: #df818c;
+  }
+  
+  /* Map */
+  .map-container iframe {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 179, 179, 0.4);
+  }
+  
+  /* Gallery Link */
+  .weddingpic {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff4d6d;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .weddingpic:hover {
+    background-color: #cc0033;
+  }
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.95rem;
+  }
+
+  .weddingpic {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  #toggle-rsvp {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+}
+
