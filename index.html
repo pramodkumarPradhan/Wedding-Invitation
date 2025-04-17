@@ -271,13 +271,13 @@
 
 <body>
   <main class="container">
-    <audio autoplay loop id="bg-music">
-      <source src="invitation-song.mp3" type="audio/mpeg" />
+    <audio  loop id="bg-music">
+      <source src="/invitation-song.mp3" type="audio/mpeg" />
     </audio>
     <div class="nav-buttons">
       <div>
         <button onclick="showSection('invitation')">Home</button>
-        <button onclick="showSection('engagement')">Engagement Photo</button>
+        <button onclick="showSection('engagement')">RingDay</button>
       </div>
     </div>
     <div class="section active" id="invitation">
@@ -401,7 +401,7 @@
       <div class="confirmation" id="form-confirmation"></div>
     </div>
     <div class="nav-buttons">
-      <button onclick="showSection('wedding')">Wedding Photo</button>
+      <button onclick="showSection('wedding')">WedPics</button>
       <button onclick="showSection('rsvp')">Response</button>
     </div>
   </main>
@@ -469,6 +469,22 @@
         document.body.removeChild(a);
       });
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const music = document.getElementById('bg-music');
+
+  // Function to play music
+  const playMusic = () => {
+    music.play().catch(error => {
+      console.error('Playback failed:', error);
+    });
+  };
+
+  // Add event listeners for user interactions
+  document.addEventListener('click', playMusic, { once: true });
+  document.addEventListener('touchstart', playMusic, { once: true });
+});
+
   </script>
 </body>
 
