@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Lokesh &amp; Abhilipsha's Wedding</title>
+  <title>Lokesh &amp; Abhilipsa's Wedding</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet" />
   <link href="./public/pic6.jpg" rel="icon" type="image/x-icon" />
   <style>
@@ -271,7 +271,7 @@
 
 <body>
   <main class="container">
-    <audio  loop id="bg-music">
+    <audio loop id="bg-music">
       <source src="/invitation-song.mp3" type="audio/mpeg" />
     </audio>
     <div class="nav-buttons">
@@ -285,12 +285,15 @@
         <img alt="Couple image" height="80" src="image.jpg" width="80" />
       </div>
       <h2>You're Invited to the Wedding of</h2>
-      <h1><b>Lokesh &amp; Abhilipsha</b></h1>
+      <h1><b>Lokesh &amp; Abhilipsa</b></h1>
       <p style="text-align:center;">April 30, 2025 | HALDIPADA</p>
       <div class="countdown" id="countdown">Loading countdown...</div>
       <h3>About the Couple</h3>
       <p style="text-align:justify; ">
-        Meet <b>Abhilipsha</b> and <b>Lokesh</b> Brought together by destiny and the loving support of their families, they began a beautiful journey filled with understanding, laughter, shared dreams, and growing affection. What started as a thoughtful match has blossomed into a strong, unbreakable bond of love, trust, and deep respect. Now, they are thrilled and grateful to celebrate this special occasion with the people who matter most - you.
+        Meet <b>Abhilipsha</b> and <b>Lokesh</b> Brought together by destiny and the loving support of their families,
+        they began a beautiful journey filled with understanding, laughter, shared dreams, and growing affection. What
+        started as a thoughtful match has blossomed into a strong, unbreakable bond of love, trust, and deep respect.
+        Now, they are thrilled and grateful to celebrate this special occasion with the people who matter most - you.
       </p>
       <h3 style="font-family: Arial, sans-serif; color:#B3003B">Schedule</h3>
       <ul style="list-style-type: none; padding: 0;">
@@ -321,7 +324,7 @@
     <div class="section" id="engagement">
       <h1>Engagement Photo Gallery</h1>
 
-      
+
       <div class="gallery">
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic1.jpg" /><a
             class="download-btn" download="True" href="pic1.jpg">Download</a></div>
@@ -353,7 +356,6 @@
             class="download-btn" download="True" href="pic15.jpg">Download</a></div>
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic16.jpg" /><a
             class="download-btn" download="True" href="pic16.jpg">Download</a></div>
-        
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic18.jpg" /><a
             class="download-btn" download="True" href="pic18.jpg">Download</a></div>
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic19.jpg" /><a
@@ -368,8 +370,6 @@
             class="download-btn" download="True" href="pic23.png">Download</a></div>
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic24.jpg" /><a
             class="download-btn" download="True" href="pic24.jpg">Download</a></div>
-        <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic26.jpg" /><a
-            class="download-btn" download="True" href="pic26.jpg">Download</a></div>
       </div>
     </div>
     <div class="section" id="wedding">
@@ -419,7 +419,7 @@
       image.onclick = function () {
         modal.style.display = "block";
         modalImg.src = this.src;
-        
+
       };
     });
     //Countdown timer
@@ -465,19 +465,19 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-  const music = document.getElementById('bg-music');
+      const music = document.getElementById('bg-music');
 
-  // Function to play music
-  const playMusic = () => {
-    music.play().catch(error => {
-      console.error('Playback failed:', error);
+      // Function to play music
+      const playMusic = () => {
+        music.play().catch(error => {
+          console.error('Playback failed:', error);
+        });
+      };
+
+      // Add event listeners for user interactions
+      document.addEventListener('click', playMusic, { once: true });
+      document.addEventListener('touchstart', playMusic, { once: true });
     });
-  };
-
-  // Add event listeners for user interactions
-  document.addEventListener('click', playMusic, { once: true });
-  document.addEventListener('touchstart', playMusic, { once: true });
-});
 
   </script>
 </body>
