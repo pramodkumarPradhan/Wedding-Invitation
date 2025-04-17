@@ -324,9 +324,7 @@
     <div class="section" id="engagement">
       <h1>Engagement Photo Gallery</h1>
 
-      <div style="text-align:center; margin: 20px;">
-        <button class="download-all-btn" onclick="downloadAllImages()">Download All</button>
-      </div>
+      
       <div class="gallery">
         <div class="img-container"><img alt="Engagement photo of Lokesh and Abhilipsha" src="pic1.jpg" /><a
             class="download-btn" download="True" href="pic1.jpg">Download</a></div>
@@ -425,7 +423,7 @@
       image.onclick = function () {
         modal.style.display = "block";
         modalImg.src = this.src;
-        captionText.innerHTML = this.alt; // Use the alt text as the caption
+        
       };
     });
     //Countdown timer
